@@ -121,7 +121,7 @@ if original_image_pil is not None:
     col1, col2 = st.columns(2)
 
     with col1:
-        st.image(original_image_pil, caption="Original Image", use_container_width=True)
+        st.image(original_image_pil, caption="Original Image")
 
     with st.spinner("🚀 Segmenting image... Please wait! This is where the U-Net's 'brain' is working."):
         try:
@@ -134,7 +134,7 @@ if original_image_pil is not None:
             segmented_mask_pil = create_mask_display(prediction, NUM_CLASSES, IMG_WIDTH, IMG_HEIGHT)
 
             with col2:
-                st.image(segmented_mask_pil, caption="Segmented Mask", use_container_width=True)
+                st.image(segmented_mask_pil, caption="Segmented Mask")
                 st.info("Each color in the segmented mask represents a different identified class.")
 
             st.success("Segmentation complete! Check out the results above.")
