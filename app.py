@@ -134,7 +134,7 @@ if original_image_pil is not None:
             segmented_mask_pil = create_mask_display(prediction, NUM_CLASSES, IMG_WIDTH, IMG_HEIGHT)
 
             with col2:
-                st.image(segmented_mask_pil, caption="Segmented Mask")
+                st.image(segmented_mask_pil, caption="Segmented Mask", use_column_width=True)
                 st.info("Each color in the segmented mask represents a different identified class.")
 
             st.success("Segmentation complete! Check out the results above.")
@@ -187,7 +187,7 @@ with st.expander("Click to learn about U-Net and this App's process"):
 
     """)
     # Assuming unet.png is in the root directory
-    st.image("unet.png", caption="U-Net Architecture Overview", use_container_width=True)
+    st.image("unet.png", caption="U-Net Architecture Overview", use_column_width=True)
 
     st.markdown(f"""
     #### How This App Works:
