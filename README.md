@@ -134,12 +134,12 @@ The model was trained over multiple phases, with a total of approximately 70 epo
 
 The `best_unet_model.h5` (or `model_weights.h5` which is saved from the best model) represents the state with the highest validation Mean IoU.
 
-* **Train Loss:** (e.g., `0.0468`)
-* **Train Accuracy:** (e.g., `0.9842`)
-* **Train Mean IoU:** (e.g., `0.8967`)
-* **Val Loss:** (e.g., `0.0509`)
-* **Val Accuracy:** (e.g., `0.9837`)
-* **Val Mean IoU:** (e.g., `0.9080`)
+* **Train Loss:** (`0.0468`)
+* **Train Accuracy:** (`0.9842`)
+* **Train Mean IoU:** (`0.8967`)
+* **Val Loss:** (`0.0509`)
+* **Val Accuracy:** (`0.9837`)
+* **Val Mean IoU:** (`0.9080`)
 
 ---
 
